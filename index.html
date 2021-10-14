@@ -12,9 +12,71 @@
                 <legend>Parsanl Information</legend>
                 <div>
                     <label for="fn">First Name</label>
-                    <input type="text" name="fname" id="fn">
+                    <input type="text" name="f" id="fn" required>
+                </div>
+                <div>
+                    <label for="ln">last Name</label>
+                    <input type="text" name="ln" id="ln" required>
+                </div>
+                <div>
+                    <label>Gender</label>
+                </div>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="Male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="Female">
+                </div>
+                <div>
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" id="other" value="Other">
+                </div> 
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="bio">Bio</label>
+                    <textarea type="text" id="bio" name="bio" value="Bio" rows="10" cols="50"></textarea>
                 </div>
             </fieldset>
+            <fieldset>
+                <legend>Education Information</legend>
+                    <div>
+                        <label for="school">Schooling</label>
+                        <input type="text" id="school" name="school">
+                        
+                    </div>
+                    <div>
+                        <label for="univercity">Univercity</label>
+                        <select id="univercity" name="univercity" >
+                            <option value="rji">Rajiv Ghandhi Institute</option>
+                            <option value="vu">Vikram Univercity</option>
+                            <option value="mu">Mandsuar Univercity</option>
+                            <option value="bi">Birla Institude</option>
+                        </select>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hobbies</legend>
+                <div>
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="reading" name="hobbies">
+                </div>
+                <div>
+                    <label for="dance">Dancing</label>
+                    <input type="checkbox" id="dance" name="hobbies">
+                </div>
+                <div>
+                    <label for="learn">Learning Somthing New</label>
+                    <input type="checkbox" id="learn" name="hobbies">
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Submit" name="submit">
+            </div>
         </form>
     </body>
 </html>
